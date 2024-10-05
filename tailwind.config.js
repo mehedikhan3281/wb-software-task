@@ -10,8 +10,11 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        'primary-color': "#06284D",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    // require('daisyui'),
+  ],
 };
