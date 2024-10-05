@@ -38,9 +38,9 @@ const RegistrationForm = () => {
     };
 
     return (
-        <form className="max-w-xl mx-auto bg-white p-6 rounded-md shadow-md space-y-6">
+        <form className="max-w-xl mx-auto bg-white space-y-2">
             <div>
-                <label className="block text-gray-700 font-bold">Full Name <span className='text-red-600 font-bold'>*</span></label>
+                <label className="block text-gray-700 font-bold mb-2">Full Name <span className='text-red-600 font-bold'>*</span></label>
                 <input
                     type="text"
                     name="fullName"
@@ -51,9 +51,9 @@ const RegistrationForm = () => {
                 />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 <div>
-                    <label className="block text-gray-700 font-bold">Email Address <span className='text-red-600 font-bold'>*</span></label>
+                    <label className="block text-gray-700 font-bold mb-2">Email Address <span className='text-red-600 font-bold'>**</span></label>
                     <input
                         type="email"
                         name="email"
@@ -64,7 +64,7 @@ const RegistrationForm = () => {
                     />
                 </div>
                 <div>
-                    <label className="block text-gray-700 font-bold">Phone <span className='text-red-600 font-bold'>*</span></label>
+                    <label className="block text-gray-700 font-bold mb-2">Phone <span className='text-red-600 font-bold'>*</span></label>
                     <input
                         type="text"
                         name="phone"
@@ -78,7 +78,7 @@ const RegistrationForm = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 <div>
-                    <label className="block text-gray-700 font-bold">Guest (10+)<span className='text-red-600 font-bold'>*</span></label>
+                    <label className="block text-gray-700 font-bold mb-2">Guest (10+)<span className='text-red-600 font-bold'>*</span></label>
                     <select
                         name="guest10Plus"
                         value={formData.guest10Plus}
@@ -100,7 +100,7 @@ const RegistrationForm = () => {
                 </div>
 
                 <div>
-                    <label className="block text-gray-700 font-bold">Guest (6+)</label>
+                    <label className="block text-gray-700 font-bold mb-2">Guest (6+)</label>
                     <select
                         name="guest6Plus"
                         value={formData.guest6Plus}
@@ -118,7 +118,7 @@ const RegistrationForm = () => {
                 </div>
 
                 <div>
-                    <label className="block text-gray-700 font-bold">Guest (-6)</label>
+                    <label className="block text-gray-700 font-bold mb-2">Guest (-6)</label>
                     <select
                         name="guestUnder6"
                         value={formData.guestUnder6}
@@ -137,7 +137,7 @@ const RegistrationForm = () => {
             </div>
 
             <div>
-                <label className="block text-gray-700 font-bold">Address in UK <span className='text-red-600 font-bold'>*</span></label>
+                <label className="block text-gray-700 font-bold mb-2">Address in UK <span className='text-red-600 font-bold'>*</span></label>
                 <textarea
                     name="addressUK"
                     value={formData.addressUK}
@@ -148,7 +148,7 @@ const RegistrationForm = () => {
             </div>
 
             <div>
-                <label className="block text-gray-700  font-bold">Your District of Origin in Bangladesh</label>
+                <label className="block text-gray-700  font-bold mb-2">Your District of Origin in Bangladesh</label>
                 <textarea
                     name="districtBD"
                     value={formData.districtBD}
@@ -192,11 +192,11 @@ const RegistrationForm = () => {
             </div>
 
             <div className="flex justify-between items-center mt-4">
-                <p className="text-lg font-bold bg-green-500 text-white px-4 py-2 rounded-3xl">Total Member: {totalMembers}</p>
-                <p className="text-lg font-bold bg-green-500 text-white px-4 py-2 rounded-3xl">£{totalAmount}</p>
+                <p className="text-lg font-bold bg-blue-600 text-white px-4 py-2 rounded-3xl">Total Member: {totalMembers}</p>
+                <p className="text-lg font-bold bg-blue-600 text-white px-4 py-2 rounded-3xl">£{totalAmount}</p>
             </div>
             <div>
-                <button className='text-lg w-full font-bold bg-blue-500 text-white px-4 py-2 rounded-md'>Submit</button>
+                <button className='text-lg w-full font-bold bg-blue-700 hover:bg-blue-800 text-white px-4 py-2 rounded-md'>Submit</button>
             </div>
 
         </form>
