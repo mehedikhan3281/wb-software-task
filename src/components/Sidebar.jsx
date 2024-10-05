@@ -11,8 +11,8 @@ import { MdContacts } from "react-icons/md";
 export default function Sidebar() {
   return (
     <aside className="h-[100vh] p-4 hidden md:block md:fixed ">
-      <div className="">
-        <img src="/logo.png" alt="Logo" className="w-20 h-20 mx-auto" />
+      <div className="mb-4">
+        <img src="/logo.png" alt="Logo" className="w-28 h-auto mx-auto" />
       </div>
       <nav>
         <p className='text-sm text-gray-400 font-bold w-full duration-200 my-2'>Overview</p>

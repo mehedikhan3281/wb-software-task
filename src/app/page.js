@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <div className="w-full">
       <Banner></Banner>
-      <RegistrationForMejban></RegistrationForMejban>
       <Services></Services>
     </div>
   );
