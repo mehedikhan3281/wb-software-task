@@ -9,16 +9,16 @@ import { usePathname } from 'next/navigation';
 export default function Sidebar() {
   const pathName = usePathname();
 
-  // Helper function to check if the link is active
+  
   const isActive = (path) => {
-    // Check if the path is exactly '/' for Home, or if it matches the current route
+    
     return path === '/'
-      ? pathName === path // Exact match for home
-      : pathName.startsWith(path); // For other routes
+      ? pathName === path 
+      : pathName.startsWith(path); 
   };
 
-  const activeClass = 'bg-slate-900 text-white'; // Active class
-  const inactiveClass = 'text-gray-600'; // Inactive class
+  const activeClass = 'bg-slate-900 active_btn hover:bg-slate-800'; 
+  const inactiveClass = 'text-gray-600'; 
 
   return (
     <aside className="h-[100vh] p-4 hidden md:block md:fixed ">
