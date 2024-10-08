@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import Link from "next/link";
 import { IoMdMenu } from "react-icons/io";
-import Sidebar from './Sidebar'; 
+import Sidebar from "@/components/Sidebar";
 
 export default function Header() {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -25,9 +25,9 @@ export default function Header() {
       </div>
 
       {isSidebarVisible && (
-        <div className="fixed inset-0 z-10 bg-black bg-opacity-50 md:hidden" onClick={toggleSidebar}>
+        <div className="fixed inset-0 z-10 bg-black bg-opacity-50  md:hidden" onClick={toggleSidebar}>
           <div className="bg-white h-full w-64 p-4" onClick={(e) => e.stopPropagation()}>
-            <Sidebar />
+            <Sidebar isVisible={isSidebarVisible}/>
           </div>
         </div>
       )}

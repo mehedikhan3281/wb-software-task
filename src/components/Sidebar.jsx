@@ -6,7 +6,7 @@ import { FaFileAlt } from "react-icons/fa";
 import { MdOutlinePhotoCameraFront, MdOutlineVideoLibrary, MdContacts } from "react-icons/md";
 import { usePathname } from 'next/navigation';
 
-export default function Sidebar() {
+export default function Sidebar({isVisible}) {
   const pathName = usePathname();
 
   
@@ -21,7 +21,7 @@ export default function Sidebar() {
   const inactiveClass = 'text-gray-600'; 
 
   return (
-    <aside className="h-[100vh] p-4 hidden md:block md:fixed ">
+    <aside className={`h-[100vh] p-4 ${isVisible ? 'block' : 'hidden'} md:block md:fixed`}>
       <div className="mb-4">
         <img src="/logo.png" alt="Logo" className="w-28 h-auto mx-auto" />
       </div>
