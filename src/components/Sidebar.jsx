@@ -63,6 +63,13 @@ export default function Sidebar({isVisible}) {
               </button>
             </Link>
           </li>
+          <li>
+            <Link href='/profile'>
+              <button className={`btn_style flex gap-2 items-center pl-3 ${isActive('/profile') ? activeClass : inactiveClass}`}>
+                <span className='icon'><MdContacts /></span> <span>Profile</span>
+              </button>
+            </Link>
+          </li>
         </ul>
         <p className='text-sm text-gray-400 font-bold w-full duration-200 my-2'>Registration</p>
         <ul className='overflow-hidden transition-all duration-500 ease-in-out'>

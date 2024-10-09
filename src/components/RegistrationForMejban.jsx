@@ -28,7 +28,7 @@ const RegistrationForMejban = () => {
                 </div>
 
                 <div
-                    className={`absolute w-full left-0 bottom-0 transition-transform transform ${showPhoneInput ? 'translate-y-0' : 'translate-y-full'} duration-700 ease-in-out`}
+                    className={`absolute w-full left-0 bottom-0 transition-transform transform ${showPhoneInput ? 'translate-y-0 fixed' : 'hidden translate-y-full'} duration-1000 ease-in-out`}
                 >
                     <div className='bg-slate-900 text-start text-white p-6 flex flex-col'>
                         <label>Phone Number</label>

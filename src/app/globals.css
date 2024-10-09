@@ -9,6 +9,7 @@
     padding: 9px;
     font-size: 15px;
     font-weight: 500;
+    width: 100%;
     
 }
 :hover.btn_style{
@@ -37,4 +38,8 @@
 
 .active_btn{
   color: white;
+}
+
+.min_height{
+  min-height: 574px;
 }
