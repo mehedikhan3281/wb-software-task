@@ -8,7 +8,6 @@ const getCourseList = async () => {
 
 const CouseList = async () => {
     const courses = await getCourseList()
-    console.log(courses)
     return (
         <div className='mx-2'>
             <h2 className='text-center mt-8 text-3xl font-semibold mb-5'>Career Acceleration Courses</h2>
